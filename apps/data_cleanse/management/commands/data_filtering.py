@@ -3,12 +3,12 @@ import pandas as pd
 # --- 1. 파일 경로 설정 ---
 # !!! 중요: 사용자 환경에 맞게 아래 파일 경로를 직접 수정해주세요.
 # 승종 경로
-crsp_file_path = r"C:\Users\user\Desktop\github\LABA-1\database\승훈형 데이터\CRSP_찐막.csv"
-sp500_file_path = r"C:\Users\user\Desktop\github\LABA-1\database\승훈형 데이터\sp500.csv"
-end_file_path = r"C:\Users\user\Desktop\github\LABA-1\database\승훈형 데이터\sp500_ticker_start_end.csv"
-output_path = r"C:\Users\user\Desktop\github\LABA-1\database\승훈형 데이터\merged_sp500.csv" 
-final_path = r"C:\Users\user\Desktop\github\LABA-1\database\승훈형 데이터\merged_final.csv"
-final2_path = r"C:\Users\user\Desktop\github\LABA-1\database\승훈형 데이터\merged_final2.csv"
+crsp_file_path = r"C:\Users\shins\OneDrive\문서\CRSP 2015.01-2024.12.csv"
+sp500_file_path = r"C:\Users\shins\OneDrive\문서\sp500.csv"
+end_file_path = r"C:\Users\shins\OneDrive\문서\sp500_ticker_start_end.csv"
+output_path = r"C:\Users\shins\OneDrive\문서\merged_sp500.csv" 
+final_path = r"C:\Users\shins\OneDrive\문서\merged_final.csv"
+final2_path = r"C:\Users\shins\OneDrive\문서\merged_final2.csv"
 # 상윤 경로
 # --- 2. 데이터 불러오기 ---
 print("데이터를 불러오는 중입니다...")
