@@ -9,7 +9,7 @@ class Command(BaseCommand):
         # 사용자가 파일 경로를 직접 지정할 수 있도록 옵션 추가
         parser.add_argument(
             "--path",
-            default="data/merged_final_2015-01.parquet",
+            default="data/data_monthly/merged_final_2015-01.parquet",
             help="Path to the Parquet file to inspect."
         )
         # 몇 줄을 볼지 사용자가 정할 수 있도록 옵션 추가
