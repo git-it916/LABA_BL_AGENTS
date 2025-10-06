@@ -16,7 +16,7 @@ class Command(BaseCommand):
             self.stderr.write(f"CSV not found: {csv_path}")
             return
         df = pd.read_csv(csv_path)
-        out = Path("data/processed/prices.parquet")
+        out = Path("data/processed/merged_final.parquet")
         out.parent.mkdir(parents=True, exist_ok=True)
         df.to_parquet(out, index=False)
         self.stdout.write(self.style.SUCCESS(f"Ingested → {out}"))
