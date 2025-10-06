@@ -34,6 +34,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
 ROOT_URLCONF = "laba.urls"
 WSGI_APPLICATION = "laba.wsgi.application"
 
