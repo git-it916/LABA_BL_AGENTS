@@ -8,7 +8,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument("--source", default="csv", help="data source name")
-        parser.add_argument("--path", default="data/raw/prices.csv", help="csv path")
+        parser.add_argument("--path", default="data/merged_final.csv", help="csv path")
 
     def handle(self, *args, **opts):
         csv_path = Path(opts["path"])

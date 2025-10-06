@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "apps.universe",
-    "apps.data",
+    "apps.data_cleanse",
     "apps.factors",
     "apps.bl",
     "apps.agents",
@@ -36,6 +36,21 @@ MIDDLEWARE = [
 
 
 ROOT_URLCONF = "laba.urls"
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [BASE_DIR / "templates"],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ],
+        },
+    },
+]
 WSGI_APPLICATION = "laba.wsgi.application"
 
 DATABASES = {
